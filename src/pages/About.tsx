@@ -50,13 +50,13 @@ const About = () => {
             <div className="fade-in">
               <h2 className="text-3xl font-bold mb-6">Vår historia</h2>
               <p className="text-lg mb-6 text-muted-foreground">
-                Tians Grill startades av Tian och hans familj med en enkel vision: att skapa en plats där lokala familjer kan komma för god mat, värme och gemenskap.
+                Tians Grill är ett nystartat företag i Bromölla med stor passion för matlagning och klassisk snabbmat. Vi startade med en enkel vision: att skapa en plats där lokala familjer kan komma för god mat, värme och gemenskap.
               </p>
               <p className="text-lg mb-6 text-muted-foreground">
-                Vad som började som en liten grillkiosk har vuxit till att bli hjärtat i vårt lokala samhälle. Vi är stolta över att servera generationer av familjer med samma passion och omsorg som vi hade från första dagen.
+                Som ett nytt företag i området strävar vi efter att bli en naturlig del av det lokala samhället. Vi tror på att servera varje gäst med samma passion och omsorg som vi hade från första dagen.
               </p>
               <p className="text-lg text-muted-foreground">
-                Varje rätt tillagas med kärlek och de bästa ingredienserna vi kan hitta. Vi tror att god mat skapar goda minnen.
+                Varje rätt tillagas med kärlek och de bästa ingredienserna vi kan hitta. Vi tror att god mat skapar goda minnen och starka relationer.
               </p>
             </div>
           </div>
@@ -110,10 +110,10 @@ const About = () => {
                 Bakom Tians Grill står ett dedikerat team av matälskare som arbetar tillsammans för att ge dig den bästa upplevelsen varje gång du besöker oss.
               </p>
               <p className="text-lg mb-6 text-muted-foreground">
-                Från köket till servicen - vi är alla en del av Tians-familjen. Vi känner många av våra gäster vid namn och vet vad de gillar att beställa.
+                Som ett nytt företag i Bromölla strävar vi efter att bygga nära relationer med våra gäster. Vi vill lära känna dig och vad du gillar att beställa.
               </p>
               <p className="text-lg text-muted-foreground">
-                Det är den här personliga touchen som gör Tians Grill mer än bara en restaurang - vi är en del av samhället.
+                Det är den här personliga touchen som gör Tians Grill mer än bara en restaurang - vi vill vara en del av samhället.
               </p>
             </div>
             <div className="fade-in">
@@ -140,7 +140,6 @@ const About = () => {
             <p className="text-xl font-medium text-foreground italic">
               "Vi tror att god mat skapar goda relationer, och goda relationer skapar ett starkt samhälle."
             </p>
-            <p className="text-lg mt-4 text-muted-foreground">- Tian och familjen</p>
           </div>
         </div>
       </section>

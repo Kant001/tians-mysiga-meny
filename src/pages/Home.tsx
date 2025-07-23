@@ -43,7 +43,7 @@ const Home = () => {
             Tians Grill
           </h1>
           <p className="text-xl md:text-2xl mb-8 fade-in max-w-2xl mx-auto">
-            Välkommen till din lokala familjerestaurang där vi serverar klassisk snabbmat med kärlek och omsorg
+            Välkommen till Tians Grill - ett nystartat företag i Bromölla med passion för matlagning och klassisk snabbmat
           </p>
           <Link to="/meny">
             <Button className="btn-warm text-lg px-8 py-4 fade-in">
@@ -71,8 +71,8 @@ const Home = () => {
             <MapPin className="w-12 h-12 text-primary mx-auto mb-4" />
             <h3 className="text-xl font-bold mb-4">Hitta oss</h3>
             <div className="space-y-2 text-foreground">
-              <p>Tians Väg 37</p>
-              <p>Din stad, Sverige</p>
+              <p>Tiansväg 37</p>
+              <p>29531 Bromölla</p>
             </div>
           </div>
 
@@ -81,8 +81,8 @@ const Home = () => {
             <Phone className="w-12 h-12 text-primary mx-auto mb-4" />
             <h3 className="text-xl font-bold mb-4">Ring oss</h3>
             <div className="space-y-2 text-foreground">
-              <p className="text-xl font-bold">0702 – 02 01 02</p>
-              <p>Beställ eller fråga oss</p>
+              <p className="text-xl font-bold">070 202 01 02</p>
+              <p>tiansgril@gmail.com</p>
             </div>
           </div>
         </div>
@@ -95,8 +95,8 @@ const Home = () => {
             <div className="fade-in">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Varför välja Tians Grill?</h2>
               <p className="text-lg mb-6 text-muted-foreground">
-                Vi är en familjedriven restaurang som har serverat den lokala gemenskapen i många år. 
-                Vår passion för mat och gästvänlighet gör varje besök till en minnesstund.
+                Vi är ett nystartat företag i Bromölla med stor passion för matlagning och klassisk snabbmat. 
+                Vår vision är att skapa en välkomnande plats där god mat och gästvänlighet går hand i hand.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
@@ -105,7 +105,7 @@ const Home = () => {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Star className="w-6 h-6 text-primary" />
-                  <span>Traditionella recept med moderna smaker</span>
+                  <span>Klassisk snabbmat med kärlek och omsorg</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Star className="w-6 h-6 text-primary" />
@@ -130,36 +130,24 @@ const Home = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-12 fade-in">Våra specialiteter</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="card-warm p-6 fade-in">
-              <img 
-                src={heroBurger} 
-                alt="Tians Burger" 
-                className="w-full h-48 object-cover rounded-xl mb-4"
-              />
-              <h3 className="text-xl font-bold mb-2">Tians Burger</h3>
-              <p className="text-muted-foreground">
+              <div className="text-6xl mb-4 text-center">🍔</div>
+              <h3 className="text-xl font-bold mb-2 text-center">Tians Burger</h3>
+              <p className="text-muted-foreground text-center">
                 Vår signaturburger med cheddar, bacon och karamelliserad lök
               </p>
             </div>
             <div className="card-warm p-6 fade-in">
-              <img 
-                src={kebabGrill} 
-                alt="Kebab" 
-                className="w-full h-48 object-cover rounded-xl mb-4"
-              />
-              <h3 className="text-xl font-bold mb-2">Färsk Kebab</h3>
-              <p className="text-muted-foreground">
-                Grillad till perfektion med våra hemliga kryddor
+              <div className="text-6xl mb-4 text-center">🍽️</div>
+              <h3 className="text-xl font-bold mb-2 text-center">À la carte</h3>
+              <p className="text-muted-foreground text-center">
+                Schnitzel, rödspätta och panerad kycklingfilé
               </p>
             </div>
             <div className="card-warm p-6 fade-in">
-              <img 
-                src={restaurantInterior} 
-                alt="Sallader" 
-                className="w-full h-48 object-cover rounded-xl mb-4"
-              />
-              <h3 className="text-xl font-bold mb-2">Färska Sallader</h3>
-              <p className="text-muted-foreground">
-                Nyttiga alternativ med lokalt odlade grönsaker
+              <div className="text-6xl mb-4 text-center">🌭</div>
+              <h3 className="text-xl font-bold mb-2 text-center">Korvmeny</h3>
+              <p className="text-muted-foreground text-center">
+                Klassiska korvar och tunnbrödsrullar
               </p>
             </div>
           </div>
