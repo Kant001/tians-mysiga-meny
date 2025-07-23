@@ -80,12 +80,12 @@ const Menu = () => {
             />
             <MenuItem 
               name="Spicy Burger" 
-              description="cheddar, bacon, jalapeños, sallad, dressing"
+              description="cheddar, bacon, jalapeños, rödlök, sallad, dressing"
               price="125:-"
             />
             <MenuItem 
               name="Crispy Chicken Burger" 
-              description="panerad kycklingfilé, sallad, tomat, rödlök, dressing"
+              description="panerad kycklingfilé, sallad, tomat, dressing"
               price="125:-"
             />
             <MenuItem 
@@ -104,7 +104,7 @@ const Menu = () => {
 
         {/* Rullar */}
         <div className="menu-section fade-in">
-          <h2 className="text-2xl font-bold mb-4 text-primary">🌯 Rullar – 99:-</h2>
+          <h2 className="text-2xl font-bold mb-4 text-primary">🌯 Rullar – 110:-</h2>
           <p className="text-muted-foreground mb-6">
             Kebab, gyros, kyckling eller falafel i tunnbröd med sallad och valfri sås
           </p>
@@ -128,13 +128,13 @@ const Menu = () => {
 
         {/* Sallader */}
         <div className="menu-section fade-in">
-          <h2 className="text-2xl font-bold mb-4 text-primary">🥗 Sallader – 105:-</h2>
+          <h2 className="text-2xl font-bold mb-4 text-primary">🥗 Sallader – 110:-</h2>
           <div className="space-y-4">
-            <MenuItem name="Kebabsallad / Gyrossallad" price="105:-" />
-            <MenuItem name="Grekisk Sallad" price="105:-" />
-            <MenuItem name="Kycklingsallad" price="105:-" />
-            <MenuItem name="Tonfisksallad" price="105:-" />
-            <MenuItem name="Falafelsallad" price="105:-" vegetarian={true} />
+            <MenuItem name="Kebabsallad / Gyrossallad" price="110:-" />
+            <MenuItem name="Grekisk Sallad" price="110:-" />
+            <MenuItem name="Kycklingsallad" price="110:-" />
+            <MenuItem name="Tonfisksallad" price="110:-" />
+            <MenuItem name="Falafelsallad" price="110:-" vegetarian={true} />
           </div>
         </div>
 
@@ -159,7 +159,7 @@ const Menu = () => {
           </p>
           <div className="space-y-4">
             <MenuItem name="Cheeseburgare" price="79:-" />
-            <MenuItem name="Chicken Nuggets" price="69:-" />
+            <MenuItem name="Chicken Nuggets (6 st)" price="69:-" />
             <MenuItem name="Grillad korv" price="49:-" />
           </div>
         </div>
@@ -172,7 +172,7 @@ const Menu = () => {
             <MenuItem name="Tunnbrödsrulle" price="79:-" />
             <MenuItem name="Bamsekorv" price="39:-" />
             <MenuItem name="Chorizo" price="39:-" />
-            <MenuItem name="French Hotdog" price="35:-" />
+            
           </div>
         </div>
 
@@ -191,8 +191,8 @@ const Menu = () => {
           <h2 className="text-2xl font-bold mb-4 text-primary">🍟 Tillbehör</h2>
           <div className="space-y-4">
             <MenuItem name="Dipsås" price="10:-" />
-            <MenuItem name="Lökringar" price="20:-" />
-            <MenuItem name="Mozzarella sticks" price="25:-" />
+            <MenuItem name="Lökringar (4 st)" price="20:-" />
+            <MenuItem name="Mozzarella sticks (4 st)" price="25:-" />
             <MenuItem name="Pommestallrik" price="39:-" />
           </div>
         </div>
