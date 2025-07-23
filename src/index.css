@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tians Grill - Warm and cozy Swedish restaurant design system 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Warm beige and cream tones */
+    --background: 35 25% 96%;
+    --foreground: 25 15% 15%;
+
+    /* Warm terracotta cards */
+    --card: 30 20% 94%;
+    --card-foreground: 25 15% 15%;
+
+    --popover: 30 20% 94%;
+    --popover-foreground: 25 15% 15%;
+
+    /* Warm terracotta primary */
+    --primary: 15 60% 50%;
+    --primary-foreground: 30 20% 96%;
+
+    /* Soft golden secondary */
+    --secondary: 45 45% 85%;
+    --secondary-foreground: 25 15% 15%;
+
+    /* Muted warm tones */
+    --muted: 40 25% 88%;
+    --muted-foreground: 25 10% 45%;
+
+    /* Warm accent colors */
+    --accent: 25 40% 75%;
+    --accent-foreground: 25 15% 15%;
+
+    --destructive: 0 60% 55%;
+    --destructive-foreground: 30 20% 96%;
+
+    --border: 35 20% 85%;
+    --input: 35 20% 90%;
+    --ring: 15 60% 50%;
+
+    /* Custom warm gradients */
+    --gradient-warm: linear-gradient(135deg, hsl(35 25% 96%), hsl(25 35% 92%));
+    --gradient-terracotta: linear-gradient(135deg, hsl(15 60% 50%), hsl(25 55% 45%));
+    --gradient-golden: linear-gradient(135deg, hsl(45 45% 85%), hsl(40 40% 80%));
+    
+    /* Warm shadows */
+    --shadow-warm: 0 4px 16px hsl(15 30% 40% / 0.1);
+    --shadow-card: 0 8px 32px hsl(15 30% 40% / 0.12);
+    
+    /* Smooth animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  /* Warm card styling */
+  .card-warm {
+    @apply bg-card rounded-2xl shadow-[var(--shadow-card)] border-border;
+    background: var(--gradient-warm);
+  }
+  
+  /* Button variants */
+  .btn-warm {
+    @apply bg-primary text-primary-foreground hover:opacity-90 
+           rounded-full px-8 py-3 font-medium transition-all duration-300
+           shadow-[var(--shadow-warm)] hover:shadow-lg hover:scale-[1.02];
+    background: var(--gradient-terracotta);
+  }
+  
+  .btn-secondary-warm {
+    @apply bg-secondary text-secondary-foreground hover:opacity-90 
+           rounded-full px-6 py-2 transition-all duration-300
+           shadow-[var(--shadow-warm)] hover:shadow-md;
+    background: var(--gradient-golden);
+  }
+  
+  /* Fade in animation for scroll */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Menu section styling */
+  .menu-section {
+    @apply card-warm p-6 mb-8;
+  }
+  
+  .menu-item {
+    @apply flex justify-between items-start mb-4 last:mb-0;
+  }
+}
