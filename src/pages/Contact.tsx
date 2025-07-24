@@ -79,6 +79,7 @@ const Contact = () => {
                   <div className="text-muted-foreground space-y-1">
                     <p><strong>Vardagar:</strong> 10:30 – 20:00</p>
                     <p><strong>Helger:</strong> 12:00 – 20:00</p>
+                    <p className="text-sm mt-2 italic">Servering och upphämtning av mat</p>
                   </div>
                 </div>
               </div>
