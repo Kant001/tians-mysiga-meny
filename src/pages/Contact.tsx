@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { MapPin, Phone, Clock, Mail } from 'lucide-react';
+import { MapPin, Phone, Utensils, Mail } from 'lucide-react';
 
 const Contact = () => {
   const observerRef = useRef<IntersectionObserver | null>(null);
@@ -73,7 +73,7 @@ const Contact = () => {
               </div>
 
               <div className="flex items-start space-x-4">
-                <Clock className="w-6 h-6 text-primary mt-1" />
+                <Utensils className="w-6 h-6 text-primary mt-1" />
                 <div>
                   <h3 className="font-semibold mb-1">Servering & Upphämtning</h3>
                   <p className="text-muted-foreground">

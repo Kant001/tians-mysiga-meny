@@ -190,7 +190,7 @@ const Menu = () => {
         <div className="menu-section fade-in">
           <h2 className="text-2xl font-bold mb-4 text-primary">🍟 Tillbehör</h2>
           <div className="space-y-4">
-            <MenuItem name="Dipsås" price="10:-" />
+            <MenuItem name="Dipsås" price="12:-" />
             <MenuItem name="Lökringar (4 st)" price="20:-" />
             <MenuItem name="Mozzarella sticks (4 st)" price="25:-" />
             <MenuItem name="Pommestallrik" price="39:-" />
