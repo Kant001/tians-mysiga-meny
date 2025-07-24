@@ -75,12 +75,10 @@ const Contact = () => {
               <div className="flex items-start space-x-4">
                 <Clock className="w-6 h-6 text-primary mt-1" />
                 <div>
-                  <h3 className="font-semibold mb-1">Öppettider</h3>
-                  <div className="text-muted-foreground space-y-1">
-                    <p><strong>Vardagar:</strong> 10:30 – 20:00</p>
-                    <p><strong>Helger:</strong> 12:00 – 20:00</p>
-                    <p className="text-sm mt-2 italic">Servering och upphämtning av mat</p>
-                  </div>
+                  <h3 className="font-semibold mb-1">Servering & Upphämtning</h3>
+                  <p className="text-muted-foreground">
+                    Vi erbjuder både servering i restaurangen och upphämtning av mat – välkommen att beställa på plats eller via telefon!
+                  </p>
                 </div>
               </div>
             </div>
