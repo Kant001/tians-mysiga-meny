@@ -178,10 +178,10 @@ const Menu = () => {
 
         {/* À la carte */}
         <div className="menu-section fade-in">
-          <h2 className="text-2xl font-bold mb-4 text-primary">🍽️ À la carte – 120:-</h2>
+          <h2 className="text-2xl font-bold mb-4 text-primary">🍽️ À la carte</h2>
           <div className="space-y-4">
             <MenuItem name="Schnitzel" price="120:-" />
-            <MenuItem name="Rödspätta" price="120:-" />
+            <MenuItem name="Rödspätta" price="130:-" />
             <MenuItem name="Panerad Kycklingfilé" price="120:-" />
           </div>
         </div>
