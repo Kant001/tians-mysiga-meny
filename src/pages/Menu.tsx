@@ -173,7 +173,7 @@ const Menu = () => {
             <MenuItem name="Bamsekorv" price="39:-" />
             <MenuItem name="Chorizo" price="39:-" />
             <MenuItem 
-              name="🧀🥓 Ost- & Baconkorv" 
+              name="Ost & Bacon Korv" 
               description="En smakrik korv fylld med ost och bacon – grillad till perfektion."
               price="45:-" 
             />
