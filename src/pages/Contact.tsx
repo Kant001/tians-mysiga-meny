@@ -94,7 +94,7 @@ const Contact = () => {
           <div className="grid md:grid-cols-3 gap-6 text-center">
             <div>
               <h4 className="font-semibold mb-2">Vardagar</h4>
-              <p className="text-muted-foreground">10:30 – 20:00</p>
+              <p className="text-muted-foreground">11:00 – 20:00</p>
             </div>
             <div>
               <h4 className="font-semibold mb-2">Helger</h4>

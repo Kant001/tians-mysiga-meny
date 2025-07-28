@@ -61,7 +61,7 @@ const Home = () => {
             <Clock className="w-12 h-12 text-primary mx-auto mb-4" />
             <h3 className="text-xl font-bold mb-4">Öppettider</h3>
             <div className="space-y-2 text-foreground">
-              <p><strong>Vardagar:</strong> 10:30 – 20:00</p>
+              <p><strong>Vardagar:</strong> 11:00 – 20:00</p>
               <p><strong>Helger:</strong> 12:00 – 20:00</p>
             </div>
           </div>
