@@ -14,7 +14,216 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      analytics_daily: {
+        Row: {
+          created_at: string
+          date: string
+          id: string
+          total_visits: number
+          unique_visitors: number
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          date: string
+          id?: string
+          total_visits?: number
+          unique_visitors?: number
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          date?: string
+          id?: string
+          total_visits?: number
+          unique_visitors?: number
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      analytics_devices: {
+        Row: {
+          created_at: string
+          device_type: string
+          id: string
+          last_visit: string | null
+          unique_visitors: number
+          updated_at: string
+          visit_count: number
+        }
+        Insert: {
+          created_at?: string
+          device_type: string
+          id?: string
+          last_visit?: string | null
+          unique_visitors?: number
+          updated_at?: string
+          visit_count?: number
+        }
+        Update: {
+          created_at?: string
+          device_type?: string
+          id?: string
+          last_visit?: string | null
+          unique_visitors?: number
+          updated_at?: string
+          visit_count?: number
+        }
+        Relationships: []
+      }
+      analytics_monthly: {
+        Row: {
+          created_at: string
+          id: string
+          month_start: string
+          total_visits: number
+          unique_visitors: number
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          month_start: string
+          total_visits?: number
+          unique_visitors?: number
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          month_start?: string
+          total_visits?: number
+          unique_visitors?: number
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      analytics_pages: {
+        Row: {
+          created_at: string
+          id: string
+          last_visit: string | null
+          page: string
+          unique_visitors: number
+          updated_at: string
+          visit_count: number
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          last_visit?: string | null
+          page: string
+          unique_visitors?: number
+          updated_at?: string
+          visit_count?: number
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          last_visit?: string | null
+          page?: string
+          unique_visitors?: number
+          updated_at?: string
+          visit_count?: number
+        }
+        Relationships: []
+      }
+      analytics_sources: {
+        Row: {
+          created_at: string
+          id: string
+          last_visit: string | null
+          source: string
+          unique_visitors: number
+          updated_at: string
+          visit_count: number
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          last_visit?: string | null
+          source: string
+          unique_visitors?: number
+          updated_at?: string
+          visit_count?: number
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          last_visit?: string | null
+          source?: string
+          unique_visitors?: number
+          updated_at?: string
+          visit_count?: number
+        }
+        Relationships: []
+      }
+      analytics_weekly: {
+        Row: {
+          created_at: string
+          id: string
+          total_visits: number
+          unique_visitors: number
+          updated_at: string
+          week_start: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          total_visits?: number
+          unique_visitors?: number
+          updated_at?: string
+          week_start: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          total_visits?: number
+          unique_visitors?: number
+          updated_at?: string
+          week_start?: string
+        }
+        Relationships: []
+      }
+      page_visits: {
+        Row: {
+          created_at: string
+          device_type: string
+          id: string
+          ip_address: unknown | null
+          page: string
+          referrer: string | null
+          session_id: string
+          timestamp: string
+          traffic_source: string
+          user_agent: string | null
+        }
+        Insert: {
+          created_at?: string
+          device_type: string
+          id?: string
+          ip_address?: unknown | null
+          page: string
+          referrer?: string | null
+          session_id: string
+          timestamp?: string
+          traffic_source: string
+          user_agent?: string | null
+        }
+        Update: {
+          created_at?: string
+          device_type?: string
+          id?: string
+          ip_address?: unknown | null
+          page?: string
+          referrer?: string | null
+          session_id?: string
+          timestamp?: string
+          traffic_source?: string
+          user_agent?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
