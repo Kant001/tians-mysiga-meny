@@ -174,7 +174,6 @@ const Menu = () => {
             <MenuItem name="Chorizo" price="39:-" />
             <MenuItem 
               name="Ost & Bacon Korv" 
-              description="En smakrik korv fylld med ost och bacon – grillad till perfektion."
               price="30:-" 
             />
             
