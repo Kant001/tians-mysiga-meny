@@ -161,6 +161,7 @@ const Menu = () => {
             <MenuItem name="Cheeseburgare" price="79:-" />
             <MenuItem name="Chicken Nuggets (6 st)" price="69:-" />
             <MenuItem name="Grillad korv" price="49:-" />
+            <MenuItem name="🐟 Fiskburgare" price="79:-" />
           </div>
         </div>
 
@@ -198,6 +199,7 @@ const Menu = () => {
             <MenuItem name="Lökringar (4 st)" price="20:-" />
             <MenuItem name="Mozzarella sticks (4 st)" price="25:-" />
             <MenuItem name="Pommestallrik" price="39:-" />
+            <MenuItem name="🧀 Chili cheese (4 st)" price="26:-" />
           </div>
         </div>
 
