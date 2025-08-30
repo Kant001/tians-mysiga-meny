@@ -70,17 +70,17 @@ const Menu = () => {
           <div className="space-y-4">
             <MenuItem 
               name="Tians Burger" 
-              description="cheddar, bacon, karamelliserad lök, sallad, dressing"
+              description="Ost, bacon, karamelliserad lök, sallad, dressing"
               price="125:-"
             />
             <MenuItem 
               name="BBQ Burger" 
-              description="cheddar, bacon, BBQ-sås, rödlök, sallad, dressing"
+              description="Ost, bacon, BBQ-sås, rödlök, sallad, dressing"
               price="125:-"
             />
             <MenuItem 
               name="Spicy Burger" 
-              description="cheddar, bacon, jalapeños, rödlök, sallad, dressing"
+              description="Ost, bacon, jalapeños, rödlök, sallad, dressing"
               price="125:-"
             />
             <MenuItem 
