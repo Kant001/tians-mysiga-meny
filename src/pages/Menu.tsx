@@ -173,10 +173,6 @@ const Menu = () => {
             <MenuItem name="Tunnbrödsrulle" price="79:-" />
             <MenuItem name="Bamsekorv" price="39:-" />
             <MenuItem name="Chorizo" price="39:-" />
-            <MenuItem 
-              name="Ost & Bacon Korv" 
-              price="30:-" 
-            />
             
           </div>
         </div>
