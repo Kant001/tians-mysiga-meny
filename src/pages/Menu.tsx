@@ -111,7 +111,7 @@ const Menu = () => {
         <div className="menu-section fade-in">
           <h2 className="text-2xl font-bold mb-4 text-primary">🌯 Rullar – 110:-</h2>
           <p className="text-muted-foreground mb-6">
-            Kebab, gyros, kyckling eller falafel i tunnbröd med sallad och valfri sås
+            Kebab, gyros, kyckling eller falafel i tunnbröd med sallad, tomat, gurka, rödlök och valfri sås.
           </p>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="card-warm p-4">
@@ -164,16 +164,61 @@ const Menu = () => {
           </div>
         </div>
 
+        {/* Pizza */}
+        <div className="menu-section fade-in">
+          <h2 className="text-2xl font-bold mb-4 text-primary">🍕 Pizza</h2>
+          <p className="text-muted-foreground mb-6">
+            Barnpizzor 10 kr billigare!
+          </p>
+          <div className="space-y-4">
+            <MenuItem name="1. Margherita" description="Ost" price="105:-" />
+            <MenuItem name="2. Vesuvio" description="Skinka, ost" price="110:-" />
+            <MenuItem name="3. Al funghi" description="Champinjoner" price="110:-" />
+            <MenuItem name="4. Salami" description="Salami" price="110:-" />
+            <MenuItem name="5. Calzone" description="Inbakad, skinka" price="110:-" />
+            <MenuItem name="6. Capricciosa" description="Skinka, champinjoner" price="110:-" />
+            <MenuItem name="7. Hawaii" description="Skinka, ananas" price="110:-" />
+            <MenuItem name="8. Bussola" description="Skinka, räkor" price="115:-" />
+            <MenuItem name="9. Bolognese" description="Köttfärs, lök" price="115:-" />
+            <MenuItem name="10. Vegetarisk" description="Paprika, lök, oliver, champinjoner" price="115:-" vegetarian={true} />
+            <MenuItem name="11. Africana" description="Skinka, banan, ananas, curry" price="120:-" />
+            <MenuItem name="12. Mama mia" description="Skinka, räkor, champinjoner" price="120:-" />
+            <MenuItem name="13. Atena" description="Feta ost, oliver, rödlök, feferoni" price="120:-" vegetarian={true} />
+            <MenuItem name="14. Azteka" description="Skinka, tacokrydda, tacosås, jalapeños, vitlöksås" price="125:-" />
+            <MenuItem name="15. Kebabpizza" description="Kebab, lök, fefferoni, valfri sås" price="125:-" />
+            <MenuItem name="16. Gyrospizza" description="Gyros, lök, fefferoni, valfri sås" price="125:-" />
+            <MenuItem name="17. Kycklingpizza" description="Kyckling, banan, ananas, curry" price="130:-" />
+            <MenuItem name="18. Mexicana" description="Tacoköttfärs, tacosås, tacokrydda, lök, jalapeños, vitlök" price="130:-" />
+            <MenuItem name="19. Quattro Stagione" description="Skinka, räkor, champinjoner, musslor" price="130:-" />
+            <MenuItem name="20. Kebab-Special" description="Kebab, sallad, lök, gurka, tomat, valfri sås" price="135:-" />
+            <MenuItem name="21. Torin" description="Kebab, pommes, fefferoni, valfri sås" price="135:-" />
+            <MenuItem name="22. Gyros Special" description="Gyros, sallad, lök, gurka, tomat, fefferoni, valfri sås" price="135:-" />
+            <MenuItem name="23. Lazio" description="Gyros, pommes, fefferoni, valfri sås" price="135:-" />
+            <MenuItem name="24. Sverige" description="Oxfilé, skinka, champinjoner, lök, bearnaisesås" price="140:-" />
+            <MenuItem name="25. Barcelona" description="Fläskfilé, skinka, champinjoner, lök, bearnaisesås" price="140:-" />
+          </div>
+        </div>
+
         {/* Tallrikar */}
         <div className="menu-section fade-in">
           <h2 className="text-2xl font-bold mb-4 text-primary">🍽️ Tallrikar – 110:-</h2>
-          <p className="text-muted-foreground mb-6">
-            Serveras med pommes, grönsaker och valfri sås
-          </p>
           <div className="space-y-4">
-            <MenuItem name="Kebabtallrik / Gyrostallrik" price="110:-" />
-            <MenuItem name="Kycklingtallrik" price="110:-" />
-            <MenuItem name="Falafeltallrik" price="110:-" vegetarian={true} />
+            <MenuItem 
+              name="🥙 Kebabtallrik / Gyrostallrik" 
+              description="Pommes, sallad, tomat, gurka, rödlök, feferoni, sås"
+              price="110:-" 
+            />
+            <MenuItem 
+              name="🍗 Kycklingtallrik" 
+              description="Kyckling, pommes, sallad, tomat, gurka, sås"
+              price="110:-" 
+            />
+            <MenuItem 
+              name="🧆 Falafeltallrik" 
+              description="Falafel, pommes, sallad, tomat, gurka, rödlök, sås"
+              price="110:-" 
+              vegetarian={true} 
+            />
           </div>
         </div>
 
@@ -205,9 +250,21 @@ const Menu = () => {
         <div className="menu-section fade-in">
           <h2 className="text-2xl font-bold mb-4 text-primary">🍽️ À la carte</h2>
           <div className="space-y-4">
-            <MenuItem name="Schnitzel" price="120:-" />
-            <MenuItem name="Rödspätta" price="130:-" />
-            <MenuItem name="Panerad Kycklingfilé" price="120:-" />
+            <MenuItem 
+              name="🐖 Schnitzel" 
+              description="Pommes, sallad, tomat, gurka, feferoni, bearnaisesås"
+              price="120:-" 
+            />
+            <MenuItem 
+              name="🍗Panerad Kycklingfilé" 
+              description="Sallad, tomat, gurka, pommes, bearnaisesås"
+              price="120:-" 
+            />
+            <MenuItem 
+              name="🐟 Rödspätta" 
+              description="Sallad, tomat, gurka, pommes, remouladsås"
+              price="130:-" 
+            />
           </div>
         </div>
 
