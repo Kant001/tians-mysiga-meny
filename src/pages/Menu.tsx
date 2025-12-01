@@ -113,6 +113,9 @@ const Menu = () => {
           <p className="text-muted-foreground mb-6">
             Kebab, gyros, kyckling eller falafel i tunnbröd med sallad, tomat, gurka, rödlök och valfri sås.
           </p>
+          <p className="text-sm text-muted-foreground mb-6 italic">
+            * Kyckling rulle serveras utan rödlök
+          </p>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="card-warm p-4">
               <h4 className="font-semibold mb-2">Kött alternativ:</h4>
