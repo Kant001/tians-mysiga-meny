@@ -69,33 +69,38 @@ const Menu = () => {
           </p>
           <div className="space-y-4">
             <MenuItem 
-              name="Tians Burger" 
-              description="Ost, bacon, karamelliserad lök, sallad, dressing"
+              name="🔥 Tians Burger" 
+              description="Högrevsburgare (170g), ost, bacon, karamelliserad lök, sallad, dressing"
               price="125:-"
             />
             <MenuItem 
-              name="BBQ Burger" 
-              description="Ost, bacon, BBQ-sås, rödlök, sallad, dressing"
+              name="🍖 BBQ Burger" 
+              description="Högrevsburgare (170g), ost, BBQ-sås, bacon, rödlök, sallad, dressing"
               price="125:-"
             />
             <MenuItem 
-              name="Spicy Burger" 
-              description="Ost, bacon, jalapeños, rödlök, sallad, dressing"
+              name="🌶️ Spicy Burger" 
+              description="Högrevsburgare (170g), ost, bacon, sallad, stark dressing"
               price="125:-"
             />
             <MenuItem 
-              name="Crispy Chicken Burger" 
-              description="panerad kycklingfilé, sallad, tomat, dressing"
+              name="🍔Original Burger" 
+              description="Högrevsburgare (170g), ost, sallad, tomat, röd lök, dressing"
               price="125:-"
             />
             <MenuItem 
-              name="Fiskburgare" 
-              description="panerad fiskfilé, rödlök, sallad, remouladsås"
+              name="🍗 Crispy Chicken Burger" 
+              description="Panerad kycklingfilé, isbergssallad, tomat, rödlök, dressing"
               price="125:-"
             />
             <MenuItem 
-              name="Halloumiburgare" 
-              description="halloumi, tomat, rödlök, sallad, vitlökssås"
+              name="🐟 Fiskburgare" 
+              description="Panerad fiskfilé, rödlök, sallad, remouladsås"
+              price="125:-"
+            />
+            <MenuItem 
+              name="🧀 Halloumiburgare" 
+              description="Grillad halloumi, tomat, rödlök, sallad, vitlökssås"
               price="125:-"
               vegetarian={true}
             />
@@ -130,11 +135,32 @@ const Menu = () => {
         <div className="menu-section fade-in">
           <h2 className="text-2xl font-bold mb-4 text-primary">🥗 Sallader – 110:-</h2>
           <div className="space-y-4">
-            <MenuItem name="Kebabsallad / Gyrossallad" price="110:-" />
-            <MenuItem name="Grekisk Sallad" price="110:-" />
-            <MenuItem name="Kycklingsallad" price="110:-" />
-            <MenuItem name="Tonfisksallad" price="110:-" />
-            <MenuItem name="Falafelsallad" price="110:-" vegetarian={true} />
+            <MenuItem 
+              name="🥙 Kebabsallad/Gyrossallad" 
+              description="sallad, tomat, gurka, rödlök, feferoni, majs, bröd, sås"
+              price="110:-" 
+            />
+            <MenuItem 
+              name="🧀Grekisk Sallad" 
+              description="fetaost, tomat, gurka, rödlök, oliver, feferoni, bröd, sås"
+              price="110:-" 
+            />
+            <MenuItem 
+              name="🍗 Kycklingsallad" 
+              description="kyckling, sallad, tomat, gurka, majs, bröd, sås"
+              price="110:-" 
+            />
+            <MenuItem 
+              name="🐟 Tonfisksallad" 
+              description="tonfisk, sallad, tomat, gurka, rödlök, citron, feferoni, majs, bröd, sås"
+              price="110:-" 
+            />
+            <MenuItem 
+              name="🌱 Falafelsallad" 
+              description="falafel, sallad, tomat, gurka, rödlök, majs, bröd, sås"
+              price="110:-" 
+              vegetarian={true} 
+            />
           </div>
         </div>
 
@@ -160,20 +186,18 @@ const Menu = () => {
           <div className="space-y-4">
             <MenuItem name="Cheeseburgare" price="79:-" />
             <MenuItem name="Chicken Nuggets (6 st)" price="69:-" />
-            <MenuItem name="Grillad korv" price="49:-" />
             <MenuItem name="🐟 Fiskburgare" price="79:-" />
           </div>
         </div>
 
-        {/* Korvmeny */}
+        {/* Förätt */}
         <div className="menu-section fade-in">
-          <h2 className="text-2xl font-bold mb-4 text-primary">🌭 Korvmeny</h2>
+          <h2 className="text-2xl font-bold mb-4 text-primary">🍽️ Förätt</h2>
           <div className="space-y-4">
-            <MenuItem name="Korv med bröd" price="20:-" />
-            <MenuItem name="Tunnbrödsrulle" price="79:-" />
-            <MenuItem name="Bamsekorv" price="39:-" />
-            <MenuItem name="Chorizo" price="39:-" />
-            
+            <MenuItem name="🍗 Nuggets med pommes" price="69:-" />
+            <MenuItem name="🥖 Vitlöksbröd" price="49:-" />
+            <MenuItem name="🧀 Mozzarella sticks med pommes" price="59:-" />
+            <MenuItem name="🌶️ Chili cheese med pommes" price="59:-" />
           </div>
         </div>
 
@@ -196,6 +220,15 @@ const Menu = () => {
             <MenuItem name="Mozzarella sticks (4 st)" price="25:-" />
             <MenuItem name="Pommestallrik" price="39:-" />
             <MenuItem name="🧀 Chili cheese (4 st)" price="26:-" />
+          </div>
+        </div>
+
+        {/* Efterrätt */}
+        <div className="menu-section fade-in">
+          <h2 className="text-2xl font-bold mb-4 text-primary">🍰 Efterrätt</h2>
+          <div className="space-y-4">
+            <MenuItem name="🥞 Pannkaka med grädde & sylt" price="39:-" />
+            <MenuItem name="🍫 Kladdkaka med grädde" price="49:-" />
           </div>
         </div>
 
