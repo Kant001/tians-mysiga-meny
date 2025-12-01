@@ -111,10 +111,7 @@ const Menu = () => {
         <div className="menu-section fade-in">
           <h2 className="text-2xl font-bold mb-4 text-primary">🌯 Rullar – 110:-</h2>
           <p className="text-muted-foreground mb-6">
-            Kebab, gyros, kyckling eller falafel i tunnbröd med sallad, tomat, gurka, rödlök och valfri sås.
-          </p>
-          <p className="text-sm text-muted-foreground mb-6 italic">
-            * Kyckling rulle serveras utan rödlök
+            Kebab, gyros, kyckling eller falafel i tunnbröd med sallad, tomat, gurka, rödlök och valfri sås. <span className="text-sm">(Kyckling serveras utan rödlök)</span>
           </p>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="card-warm p-4">
