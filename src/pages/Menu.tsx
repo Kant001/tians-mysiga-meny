@@ -55,7 +55,7 @@ const Menu = () => {
             <h2 className="text-2xl font-bold text-primary mb-2">🍔 Tians Grill</h2>
             <p className="mb-2">📍 Tians Väg 37</p>
             <p className="mb-2">📞 Tel: 0702 – 02 01 02</p>
-            <p>🕒 Öppet: Vardagar 10:30 – 20:00 / Helger 12:00 – 20:00</p>
+            <p>🕒 Öppet: Vardagar 11:00 – 20:00 / Helger 12:00 – 20:00</p>
           </div>
         </div>
       </section>
