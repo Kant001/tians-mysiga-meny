@@ -1,5 +1,7 @@
 import { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { Leaf } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const Menu = () => {
   const observerRef = useRef<IntersectionObserver | null>(null);
@@ -57,6 +59,11 @@ const Menu = () => {
             <p className="mb-2">📞 Tel: 0702 – 02 01 02</p>
             <p>🕒 Öppet: Vardagar 11:00 – 20:00 / Helger 12:00 – 20:00</p>
           </div>
+          <Link to="/#bestall" className="mt-6 inline-block">
+            <Button className="btn-warm text-lg px-8 py-4">
+              Beställ online
+            </Button>
+          </Link>
         </div>
       </section>
 
