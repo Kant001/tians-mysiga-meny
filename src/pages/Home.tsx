@@ -57,7 +57,7 @@ const Home = () => {
             className="btn-warm text-lg px-8 py-4 fade-in"
             onClick={() => document.getElementById('bestall')?.scrollIntoView({ behavior: 'smooth' })}
           >
-            Beställ
+            Beställ online
           </Button>
         </div>
       </section>

@@ -19,7 +19,7 @@ const Navigation = () => {
 
   const navItems = [
     { path: '/', label: 'Hem', icon: Home },
-    { path: '#bestall', label: 'Beställ', icon: ShoppingCart, onClick: handleBestallClick },
+    { path: '#bestall', label: 'Beställ online', icon: ShoppingCart, onClick: handleBestallClick },
     { path: '/om-oss', label: 'Om oss', icon: Users },
     { path: '/kontakt', label: 'Kontakt', icon: Phone },
   ];
