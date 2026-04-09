@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Home, Users, UtensilsCrossed, Phone } from 'lucide-react';
+import { Menu, X, Home, Users, UtensilsCrossed, Phone, ShoppingCart } from 'lucide-react';
 import tiansLogo from '@/assets/tians-logo.jpg';
 
 const Navigation = () => {
@@ -19,7 +19,7 @@ const Navigation = () => {
 
   const navItems = [
     { path: '/', label: 'Hem', icon: Home },
-    { path: '#bestall', label: 'Beställ', icon: UtensilsCrossed, onClick: handleBestallClick },
+    { path: '#bestall', label: 'Beställ', icon: ShoppingCart, onClick: handleBestallClick },
     { path: '/om-oss', label: 'Om oss', icon: Users },
     { path: '/meny', label: 'Meny', icon: UtensilsCrossed },
     { path: '/kontakt', label: 'Kontakt', icon: Phone },
@@ -38,10 +38,11 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
-            {navItems.map(({ path, label, icon: Icon }) => (
+            {navItems.map(({ path, label, icon: Icon, onClick }) => (
               <Link
                 key={path}
-                to={path}
+                to={onClick ? '#' : path}
+                onClick={onClick}
                 className={`flex items-center space-x-2 px-3 py-2 rounded-full transition-all duration-300 ${
                   isActive(path)
                     ? 'bg-primary text-primary-foreground shadow-[var(--shadow-warm)]'
@@ -69,11 +70,11 @@ const Navigation = () => {
         {isOpen && (
           <div className="md:hidden pb-4">
             <div className="flex flex-col space-y-2">
-              {navItems.map(({ path, label, icon: Icon }) => (
+              {navItems.map(({ path, label, icon: Icon, onClick }) => (
                 <Link
                   key={path}
-                  to={path}
-                  onClick={() => setIsOpen(false)}
+                  to={onClick ? '#' : path}
+                  onClick={onClick || (() => setIsOpen(false))}
                   className={`flex items-center space-x-3 px-4 py-3 rounded-xl transition-all duration-300 ${
                     isActive(path)
                       ? 'bg-primary text-primary-foreground shadow-[var(--shadow-warm)]'
