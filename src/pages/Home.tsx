@@ -27,6 +27,14 @@ const Home = () => {
     return () => observerRef.current?.disconnect();
   }, []);
 
+  useEffect(() => {
+    if (window.location.hash === '#bestall') {
+      setTimeout(() => {
+        document.getElementById('bestall')?.scrollIntoView({ behavior: 'smooth' });
+      }, 300);
+    }
+  }, []);
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
