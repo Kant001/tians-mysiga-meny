@@ -7,8 +7,19 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
+  const handleBestallClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (location.pathname === '/') {
+      document.getElementById('bestall')?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      window.location.href = '/#bestall';
+    }
+    setIsOpen(false);
+  };
+
   const navItems = [
     { path: '/', label: 'Hem', icon: Home },
+    { path: '#bestall', label: 'Beställ', icon: UtensilsCrossed, onClick: handleBestallClick },
     { path: '/om-oss', label: 'Om oss', icon: Users },
     { path: '/meny', label: 'Meny', icon: UtensilsCrossed },
     { path: '/kontakt', label: 'Kontakt', icon: Phone },
