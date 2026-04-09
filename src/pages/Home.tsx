@@ -53,11 +53,12 @@ const Home = () => {
           <p className="text-xl md:text-2xl mb-8 fade-in max-w-2xl mx-auto">
             Välkommen till Tians Grill - ett nystartat företag i Bromölla med passion för matlagning och klassisk snabbmat
           </p>
-          <Link to="/meny">
-            <Button className="btn-warm text-lg px-8 py-4 fade-in">
-              Se vår meny
-            </Button>
-          </Link>
+          <Button
+            className="btn-warm text-lg px-8 py-4 fade-in"
+            onClick={() => document.getElementById('bestall')?.scrollIntoView({ behavior: 'smooth' })}
+          >
+            Beställ
+          </Button>
         </div>
       </section>
 

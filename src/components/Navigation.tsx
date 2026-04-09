@@ -21,7 +21,6 @@ const Navigation = () => {
     { path: '/', label: 'Hem', icon: Home },
     { path: '#bestall', label: 'Beställ', icon: ShoppingCart, onClick: handleBestallClick },
     { path: '/om-oss', label: 'Om oss', icon: Users },
-    { path: '/meny', label: 'Meny', icon: UtensilsCrossed },
     { path: '/kontakt', label: 'Kontakt', icon: Phone },
   ];
 
