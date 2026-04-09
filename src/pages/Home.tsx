@@ -27,6 +27,14 @@ const Home = () => {
     return () => observerRef.current?.disconnect();
   }, []);
 
+  useEffect(() => {
+    if (window.location.hash === '#bestall') {
+      setTimeout(() => {
+        document.getElementById('bestall')?.scrollIntoView({ behavior: 'smooth' });
+      }, 300);
+    }
+  }, []);
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -51,6 +59,25 @@ const Home = () => {
             </Button>
           </Link>
         </div>
+      </section>
+
+      {/* Beställ Online Section */}
+      <section id="bestall" className="py-16 px-4 max-w-7xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 fade-in">Beställ Online</h2>
+        <iframe
+          src="https://embed.lumit.se?id=947&embed=true"
+          scrolling="no"
+          frameBorder="0"
+          style={{
+            width: '100%',
+            maxWidth: '98vw',
+            height: '90vh',
+            background: 'hsla(0,0%,100%,0.69)',
+            borderRadius: '10px',
+            boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+          }}
+          title="Beställ Online"
+        />
       </section>
 
       {/* Info Cards Section */}
